@@ -33,6 +33,7 @@ func main() {
 		}
 		fmt.Println("")
 		time.Sleep(time.Second)
+		currentState = currentState.StateTransition(size)
 	}
 
 

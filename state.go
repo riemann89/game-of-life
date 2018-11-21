@@ -7,7 +7,10 @@ type State [][]uint8
 func (currentState State) StateTransition(size int) State {
 
 	newState := State(make([][]uint8, size))
-	//TODO init new state
+	
+	for i:=0; i< size; i++{
+		newState[i] = make([]uint8, size)
+	}
 
 	for i := 0; i < size; i++ {
 		for j := 0; j < size; j++ {
